@@ -1,0 +1,150 @@
+ @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #da7474;
+    font-family: 'Protest Strike', sans-serif;
+    background-image: url('Images/ice.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* Your existing styles */
+}
+
+.happy, .prick {
+  position: fixed;
+  top: 50%; /* Adjust as needed to position vertically */
+  font-family: 'DynaPuff', system-ui;
+  font-size: 48px; /* Adjust size as needed */
+  color: pink;
+  -webkit-text-stroke: 1px white; /* Create an outline effect */
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.happy {
+    left: calc(20% - 120px);
+}
+
+.prick{
+    right: calc(17% - 120px);
+}
+
+
+
+  .image-container {
+    position: relative;
+    display: inline-block; /* or 'block', depending on your layout needs */
+  }
+  
+  .collageimages img {
+    width: auto; /* Maintain the aspect ratio of the images */
+    max-height: 70vh; /* Adjust max height to ensure all images fit on the screen */
+    display: none; /* Hide all images by default */
+  }
+
+  #baetext {
+    display: none; /* Hide the text by default */
+    position: absolute; /* Position it relative to its nearest positioned ancestor */
+    top: 12%; /* Adjust these values as needed */
+    left: 38%; /* Position to the right or as fits your layout */
+    color: #a4f81d; /* Text color */
+    font-size: 20px; /* Adjust font size as needed */
+    animation: pulse 2s infinite ease-in-out;
+    z-index: 2;
+  }
+
+  #baetext {
+    color: #dc3deb;
+    border: 6px solid #46034e; 
+    padding: 15px; /* Space between the border and the content inside */
+    margin: 5px auto; /* Top and bottom margins with automatic horizontal centering */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 30px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+  }
+
+  
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Increase the scale for the pulse effect */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .contentcontainer {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack images and buttons vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    height: 100vh; /* Use full viewport height */
+  }
+  
+  .collageimages {
+    width: 80%; /* Adjust to your preference */
+    max-height: 80vh; /* Maximum height of images container */
+    margin: 0 auto; /* Center the images container */
+    position: relative; /* Position relative to place buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .collageimages img {
+    width: auto; /* Maintain the aspect ratio of the images */
+    max-height: 70vh; /* Adjust max height to ensure all images fit on the screen */
+    display: none; /* Hide all images by default */
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons container */
+    margin-top: 0px; /* Add space between the images and buttons */
+  }
+
+  .buttons button:hover {
+    animation: pulse 0.7s ;
+  }
+  
+  .buttons button {
+    font-family: 'Protest Strike', sans-serif;
+    padding: 10px 25px;
+    margin: 15px;
+    background-color: #e041e6; /* Initial button background color */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 9px 5px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, and color */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+
+  .buttons button:hover {
+    background-color: rgb(231, 148, 220);
+
+    
+  }
+  
+  /* The first image can be displayed by default if needed */
+  .collageimages img:first-child {
+    display: block;
+  }
