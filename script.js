@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const baeText = document.getElementById('baetext');
   const everybodyAudio = document.getElementById('everybody');
   const backtomeAudio = document.getElementById('backtome');
+  const daddyText = document.getElementById('daddytext');
 
   // Function to play "everybody" audio, checking if it's already playing
   function playEverybodyAudio() {
@@ -23,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
       backtomeAudio.play();
   }
 
+  
+
   // Function to update the image display
   function updateImageDisplay() {
       images.forEach((img, index) => {
@@ -31,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
               img.style.display = 'block';
               // Update the text's display based on whether the "bae" image is shown
               baeText.style.display = img.id === 'bae' ? 'block' : 'none';
+              daddyText.style.display = img.id === 'daddy' ? 'block' : 'none'; // Update for daddytext
           }
       });
   }

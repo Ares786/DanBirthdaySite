@@ -5,7 +5,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #da7474;
+    background: #20475e;
     font-family: 'Protest Strike', sans-serif;
     background-image: url('Images/ice.jpg'); 
     background-repeat: no-repeat;
@@ -54,18 +54,10 @@ body, html {
     display: none; /* Hide all images by default */
   }
 
-  #baetext {
-    display: none; /* Hide the text by default */
-    position: absolute; /* Position it relative to its nearest positioned ancestor */
-    top: 12%; /* Adjust these values as needed */
-    left: 38%; /* Position to the right or as fits your layout */
-    color: #a4f81d; /* Text color */
-    font-size: 20px; /* Adjust font size as needed */
-    animation: pulse 2s infinite ease-in-out;
-    z-index: 2;
-  }
 
-  #baetext {
+
+  #baetext, #daddytext {
+    font-size: 30px;
     color: #dc3deb;
     border: 6px solid #46034e; 
     padding: 15px; /* Space between the border and the content inside */
@@ -73,6 +65,8 @@ body, html {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     border-radius: 30px; /* Rounded corners */
     background-color: #ffffff; /* White background */
+    
+
   }
 
   
@@ -117,7 +111,7 @@ body, html {
   .buttons {
     display: flex;
     justify-content: center; /* Center the buttons container */
-    margin-top: 0px; /* Add space between the images and buttons */
+    margin-top: 10px; /* Add space between the images and buttons */
   }
 
   .buttons button:hover {
@@ -132,7 +126,7 @@ body, html {
     border: none;
     border-radius: 20px;
     color: white;
-    font-size: 20px;
+    font-size: 50px;
     cursor: pointer;
     box-shadow: 0 9px 5px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, and color */
     transition: background-color 0.3s; /* Smooth transition for background color */
